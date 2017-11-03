@@ -1,7 +1,6 @@
 ## 1.使用指南
 
-- [**中文版**](https://github.com/MarnoDev/AC-QRCode-RN/blob/master/README_CN.md)
-- [**English Version**](https://github.com/MarnoDev/AC-QRCode-RN/blob/master/README.md)
+
 
 ## 2.特性
 - 支持扫描二维码、条形码
@@ -23,11 +22,21 @@
 ```
 //第一步
 
-On iOS 11 and later you need to add NSPhotoLibraryAddUsageDescription key to the Info.plist. This key lets you describe the reason your app seeks write-only access to the user’s photo library. Info.plist can be found in 'your_project/ios/your_project/Info.plist'. Add the following code:
+On iOS 11 
+'your_project/ios/your_project/Info.plist'
 
 <!-- Include this only if you are planning to use the camera roll -->
-<key>NSPhotoLibraryAddUsageDescription</key>
-<string>Your message to user when the photo library is accessed for the first time</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+	<string>Your message to user when the microsphone is accessed for the first time</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Your message to user when the photo library is accessed for the first time</string>  
+    
+    
+    <key>NSMicrophoneUsageDescription</key>
+	<string>需要访问您的相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要访问您的相册</string>
 
 
 npm install react-native-camera --save  
