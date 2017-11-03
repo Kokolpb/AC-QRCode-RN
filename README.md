@@ -8,6 +8,13 @@
 - Can scan QR code,Bar code
 - Support Android and iOS
 - Base on react-native-camera
+
+first install
+
+npm install react-native-camera --save
+react-native link react-native-camera
+
+
 - Scanning interface can be customized
 
 ## 3.ScreenShots
@@ -22,6 +29,10 @@
 ## 4.Installation
 ```
 // first step
+
+npm install react-native-camera --save
+react-native link react-native-camera
+
 npm install ac-qrcode --save
 
 // second step
