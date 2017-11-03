@@ -27,13 +27,10 @@ On iOS 11
 
 <!-- Include this only if you are planning to use the camera roll -->
 
-    <key>NSMicrophoneUsageDescription</key>
-	<string>Your message to user when the microsphone is accessed for the first time</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Your message to user when the photo library is accessed for the first time</string>  
     
     
-    <key>NSMicrophoneUsageDescription</key>
+    
+    <key>NSCameraUsageDescription</key>
 	<string>需要访问您的相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问您的相册</string>
