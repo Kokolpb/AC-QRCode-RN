@@ -6,7 +6,11 @@
 ## 2.特性
 - 支持扫描二维码、条形码
 - 支持 Android 和 iOS 系统
-- 基于 react-native-camera
+- 基于 react-native-camera 先完成此插件安装
+
+    npm install react-native-camera --save  
+    react-native link react-native-camera  
+    
 - 轻松实现各类扫描界面
 
 ## 3.截图预览
@@ -22,6 +26,10 @@
 
 ```
 //第一步
+
+npm install react-native-camera --save  
+react-native link react-native-camera  
+
 npm install ac-qrcode --save
 
 //第二步（react-native-camera 需要 link 后才能使用）
