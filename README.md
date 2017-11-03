@@ -9,10 +9,10 @@
 - Support Android and iOS
 - Base on react-native-camera
 
-first install
+    first install  
 
-npm install react-native-camera --save
-react-native link react-native-camera
+    npm install react-native-camera --save  
+    react-native link react-native-camera  
 
 
 - Scanning interface can be customized
@@ -30,8 +30,8 @@ react-native link react-native-camera
 ```
 // first step
 
-npm install react-native-camera --save
-react-native link react-native-camera
+npm install react-native-camera --save  
+react-native link react-native-camera  
 
 npm install ac-qrcode --save
 
