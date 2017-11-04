@@ -6,6 +6,8 @@
 - 支持扫描二维码、条形码
 - 支持 Android 和 iOS 系统
 - 基于 react-native-camera  需要先完成此插件安装  
+ 	 https://github.com/lwansbrough/react-native-camera
+	 
 - 轻松实现各类扫描界面
 
 ## 3.截图预览
@@ -26,23 +28,28 @@ On iOS 11
 'your_project/ios/your_project/Info.plist'
 
 <!-- Include this only if you are planning to use the camera roll -->
-
-    
-    
     
     <key>NSCameraUsageDescription</key>
 	<string>需要访问您的相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问您的相册</string>
+	
+On android
+'your_project/android/app/src/main/AndroidManifest.xml'
+To enable video recording feature you have to add the following code to the AndroidManifest.xml:
 
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>  
+  <uses-permission android:name="android.permission.RECORD_VIDEO"/>  
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />  
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
 
-npm install react-native-camera --save  
-react-native link react-native-camera  
+然后安装
 
-npm install ac-qrcode --save
-
+1、npm install react-native-camera --save  
+2、react-native link react-native-camera  
 //第二步（react-native-camera 需要 link 后才能使用）
-react-native link
+3、npm install ac-qrcode --save
+4、react-native link
 
 PS：如果 link 没有成功，会报错。如果没有自动 link，可以手动 link
 ```
